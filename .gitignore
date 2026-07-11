@@ -1,0 +1,7 @@
+**/data/
+*.pdb
+*.sdf
+*.h5ad
+__pycache__/
+.venv/
+*.ipynb_checkpoints
