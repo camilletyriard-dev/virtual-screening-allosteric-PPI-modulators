@@ -1,0 +1,68 @@
+{
+  "timestamp": "2026-07-11T18:23:58.231020",
+  "os": {
+    "system": "Windows",
+    "release": "10",
+    "version": "10.0.26200",
+    "machine": "AMD64",
+    "python_version": "3.11.9"
+  },
+  "cpu": {
+    "physical_cores": 14,
+    "logical_cores": 20,
+    "max_frequency_mhz": 2000.0,
+    "architecture": "AMD64",
+    "processor": "Intel64 Family 6 Model 154 Stepping 3, GenuineIntel",
+    "current_frequency_mhz": 1545.0
+  },
+  "memory": {
+    "total_gb": 15.71,
+    "available_gb": 2.2,
+    "used_gb": 13.51,
+    "percent_used": 86.0,
+    "swap_total_gb": 17.08,
+    "swap_available_gb": 14.57
+  },
+  "disk": {
+    "path": "C:\\Users\\PC\\Documents\\Vazquez-lab\\projects\\virtual-screening-allosteric-modulators",
+    "total_gb": 930.55,
+    "available_gb": 536.97,
+    "used_gb": 393.57,
+    "percent_used": 42.3
+  },
+  "gpu": {
+    "nvidia_gpus": [],
+    "amd_gpus": [],
+    "apple_silicon": null,
+    "total_gpus": 0,
+    "available_backends": []
+  },
+  "recommendations": {
+    "parallel_processing": {
+      "strategy": "high_parallelism",
+      "suggested_workers": 18,
+      "libraries": [
+        "joblib",
+        "multiprocessing",
+        "dask"
+      ]
+    },
+    "memory_strategy": {
+      "strategy": "memory_constrained",
+      "libraries": [
+        "zarr",
+        "dask",
+        "h5py"
+      ],
+      "note": "Use out-of-core processing for large datasets"
+    },
+    "gpu_acceleration": {
+      "available": false,
+      "note": "No GPU detected, use CPU-based libraries"
+    },
+    "large_data_handling": {
+      "strategy": "disk_abundant",
+      "note": "Sufficient space for large intermediate files"
+    }
+  }
+}
