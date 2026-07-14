@@ -5,3 +5,7 @@
 __pycache__/
 .venv/
 *.ipynb_checkpoints
+data/
+tools
+.claude
+.agents

@@ -1,0 +1,57 @@
+{
+  ".claude_resources.json": {
+    "mtime": 1783790638.9911401,
+    "ast_hash": "010d722e381e2cda10e7b90bcc4e7cd1",
+    "semantic_hash": "010d722e381e2cda10e7b90bcc4e7cd1"
+  },
+  "scripts/01_identify_interface.py": {
+    "mtime": 1783790836.1284053,
+    "ast_hash": "75cc8852508d452de6f65f7f2a11a7c9",
+    "semantic_hash": "75cc8852508d452de6f65f7f2a11a7c9"
+  },
+  "scripts/02_filter_candidates.py": {
+    "mtime": 1783857044.605789,
+    "ast_hash": "ce1610460072c3df4a89ff25b98c9fcd",
+    "semantic_hash": "ce1610460072c3df4a89ff25b98c9fcd"
+  },
+  "scripts/03_build_docking_set.py": {
+    "mtime": 1783857074.1344724,
+    "ast_hash": "5e0a3e96e50ff4abfa5cc53be26d1d3a",
+    "semantic_hash": "5e0a3e96e50ff4abfa5cc53be26d1d3a"
+  },
+  "scripts/04_prepare_receptor.py": {
+    "mtime": 1783978312.5584476,
+    "ast_hash": "3dab19d89632d01694d469d620cb6cee",
+    "semantic_hash": "3dab19d89632d01694d469d620cb6cee"
+  },
+  "scripts/05_prepare_ligands.py": {
+    "mtime": 1783978423.2410126,
+    "ast_hash": "b1d0126fd7b5fea668ca7d2f8bd61cd5",
+    "semantic_hash": "b1d0126fd7b5fea668ca7d2f8bd61cd5"
+  },
+  "scripts/06_rank_docking_results.py": {
+    "mtime": 1783979403.487643,
+    "ast_hash": "bdceb2d13b8a5c2213d569be597d52ac",
+    "semantic_hash": "bdceb2d13b8a5c2213d569be597d52ac"
+  },
+  "scripts/07_train_qsar_model.py": {
+    "mtime": 1783984855.4195917,
+    "ast_hash": "f1ebee89aad8d985a9303e2a1cbe35dc",
+    "semantic_hash": "f1ebee89aad8d985a9303e2a1cbe35dc"
+  },
+  "scripts/08_check_supplier_availability.py": {
+    "mtime": 1783985688.78196,
+    "ast_hash": "7df80d094927876ed2a632eb913d9cb3",
+    "semantic_hash": "7df80d094927876ed2a632eb913d9cb3"
+  },
+  "skills-lock.json": {
+    "mtime": 1783790265.0288603,
+    "ast_hash": "7c9e9cb04c4d603c826e351485d130e9",
+    "semantic_hash": "7c9e9cb04c4d603c826e351485d130e9"
+  },
+  "README.md": {
+    "mtime": 1783764696.2624109,
+    "ast_hash": "3911ae0a8a5d7b63f4ddf9e4b4292cc7",
+    "semantic_hash": "3911ae0a8a5d7b63f4ddf9e4b4292cc7"
+  }
+}

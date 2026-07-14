@@ -1,0 +1,821 @@
+{
+  "directed": false,
+  "multigraph": false,
+  "graph": {
+    "hyperedges": [
+      {
+        "id": "readme_pipeline_hyperedge",
+        "label": "AlphaFold + ZINC + DiffDock virtual screening pipeline",
+        "nodes": [
+          "readme_alphafold",
+          "readme_zinc",
+          "readme_diffdock",
+          "readme_scientific_agent_skills"
+        ],
+        "relation": "participate_in",
+        "confidence": "EXTRACTED",
+        "confidence_score": 0.9,
+        "source_file": "README.md"
+      }
+    ]
+  },
+  "nodes": [
+    {
+      "label": "01_identify_interface.py",
+      "file_type": "code",
+      "source_file": "scripts/01_identify_interface.py",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "scripts_01_identify_interface",
+      "community": 2,
+      "norm_label": "01_identify_interface.py"
+    },
+    {
+      "label": "get_heavy_atoms()",
+      "file_type": "code",
+      "source_file": "scripts/01_identify_interface.py",
+      "source_location": "L23",
+      "_origin": "ast",
+      "id": "scripts_01_identify_interface_get_heavy_atoms",
+      "community": 2,
+      "norm_label": "get_heavy_atoms()"
+    },
+    {
+      "label": "main()",
+      "file_type": "code",
+      "source_file": "scripts/01_identify_interface.py",
+      "source_location": "L34",
+      "_origin": "ast",
+      "id": "scripts_01_identify_interface_main",
+      "community": 2,
+      "norm_label": "main()"
+    },
+    {
+      "label": "Identify the MDM2-p53 interaction interface using the experimental complex 1YCR",
+      "file_type": "rationale",
+      "source_file": "scripts/01_identify_interface.py",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "scripts_01_identify_interface_rationale_1",
+      "community": 2,
+      "norm_label": "identify the mdm2-p53 interaction interface using the experimental complex 1ycr"
+    },
+    {
+      "label": "02_filter_candidates.py",
+      "file_type": "code",
+      "source_file": "scripts/02_filter_candidates.py",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "scripts_02_filter_candidates",
+      "community": 3,
+      "norm_label": "02_filter_candidates.py"
+    },
+    {
+      "label": "descriptors_ok()",
+      "file_type": "code",
+      "source_file": "scripts/02_filter_candidates.py",
+      "source_location": "L34",
+      "_origin": "ast",
+      "id": "scripts_02_filter_candidates_descriptors_ok",
+      "community": 3,
+      "norm_label": "descriptors_ok()"
+    },
+    {
+      "label": "main()",
+      "file_type": "code",
+      "source_file": "scripts/02_filter_candidates.py",
+      "source_location": "L45",
+      "_origin": "ast",
+      "id": "scripts_02_filter_candidates_main",
+      "community": 3,
+      "norm_label": "main()"
+    },
+    {
+      "label": "Filter the ZINC candidate pool (MW 300-500, logP 2-4 tranches) with RDKit/datamo",
+      "file_type": "rationale",
+      "source_file": "scripts/02_filter_candidates.py",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "scripts_02_filter_candidates_rationale_1",
+      "community": 3,
+      "norm_label": "filter the zinc candidate pool (mw 300-500, logp 2-4 tranches) with rdkit/datamo"
+    },
+    {
+      "label": "03_build_docking_set.py",
+      "file_type": "code",
+      "source_file": "scripts/03_build_docking_set.py",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "scripts_03_build_docking_set",
+      "community": 8,
+      "norm_label": "03_build_docking_set.py"
+    },
+    {
+      "label": "Resume point: zinc_filtered.csv was already produced by 02_filter_candidates.py",
+      "file_type": "rationale",
+      "source_file": "scripts/03_build_docking_set.py",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "scripts_03_build_docking_set_rationale_1",
+      "community": 8,
+      "norm_label": "resume point: zinc_filtered.csv was already produced by 02_filter_candidates.py"
+    },
+    {
+      "label": "04_prepare_receptor.py",
+      "file_type": "code",
+      "source_file": "scripts/04_prepare_receptor.py",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "scripts_04_prepare_receptor",
+      "community": 7,
+      "norm_label": "04_prepare_receptor.py"
+    },
+    {
+      "label": "main()",
+      "file_type": "code",
+      "source_file": "scripts/04_prepare_receptor.py",
+      "source_location": "L30",
+      "_origin": "ast",
+      "id": "scripts_04_prepare_receptor_main",
+      "community": 7,
+      "norm_label": "main()"
+    },
+    {
+      "label": "Prepare the MDM2 receptor for AutoDock Vina docking.  Note: mdm2_p53_interface.j",
+      "file_type": "rationale",
+      "source_file": "scripts/04_prepare_receptor.py",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "scripts_04_prepare_receptor_rationale_1",
+      "community": 7,
+      "norm_label": "prepare the mdm2 receptor for autodock vina docking.  note: mdm2_p53_interface.j"
+    },
+    {
+      "label": "05_prepare_ligands.py",
+      "file_type": "code",
+      "source_file": "scripts/05_prepare_ligands.py",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "scripts_05_prepare_ligands",
+      "community": 4,
+      "norm_label": "05_prepare_ligands.py"
+    },
+    {
+      "label": "embed_one()",
+      "file_type": "code",
+      "source_file": "scripts/05_prepare_ligands.py",
+      "source_location": "L23",
+      "_origin": "ast",
+      "id": "scripts_05_prepare_ligands_embed_one",
+      "community": 4,
+      "norm_label": "embed_one()"
+    },
+    {
+      "label": "main()",
+      "file_type": "code",
+      "source_file": "scripts/05_prepare_ligands.py",
+      "source_location": "L35",
+      "_origin": "ast",
+      "id": "scripts_05_prepare_ligands_main",
+      "community": 4,
+      "norm_label": "main()"
+    },
+    {
+      "label": "Generate 3D conformers for the docking-set candidates and convert each to a PDBQ",
+      "file_type": "rationale",
+      "source_file": "scripts/05_prepare_ligands.py",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "scripts_05_prepare_ligands_rationale_1",
+      "community": 4,
+      "norm_label": "generate 3d conformers for the docking-set candidates and convert each to a pdbq"
+    },
+    {
+      "label": "06_rank_docking_results.py",
+      "file_type": "code",
+      "source_file": "scripts/06_rank_docking_results.py",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "scripts_06_rank_docking_results",
+      "community": 5,
+      "norm_label": "06_rank_docking_results.py"
+    },
+    {
+      "label": "best_affinity()",
+      "file_type": "code",
+      "source_file": "scripts/06_rank_docking_results.py",
+      "source_location": "L18",
+      "_origin": "ast",
+      "id": "scripts_06_rank_docking_results_best_affinity",
+      "community": 5,
+      "norm_label": "best_affinity()"
+    },
+    {
+      "label": "main()",
+      "file_type": "code",
+      "source_file": "scripts/06_rank_docking_results.py",
+      "source_location": "L27",
+      "_origin": "ast",
+      "id": "scripts_06_rank_docking_results_main",
+      "community": 5,
+      "norm_label": "main()"
+    },
+    {
+      "label": "Parse AutoDock Vina batch docking output (one PDBQT per ligand, poses ranked bes",
+      "file_type": "rationale",
+      "source_file": "scripts/06_rank_docking_results.py",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "scripts_06_rank_docking_results_rationale_1",
+      "community": 5,
+      "norm_label": "parse autodock vina batch docking output (one pdbqt per ligand, poses ranked bes"
+    },
+    {
+      "label": "07_train_qsar_model.py",
+      "file_type": "code",
+      "source_file": "scripts/07_train_qsar_model.py",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "scripts_07_train_qsar_model",
+      "community": 6,
+      "norm_label": "07_train_qsar_model.py"
+    },
+    {
+      "label": "featurize()",
+      "file_type": "code",
+      "source_file": "scripts/07_train_qsar_model.py",
+      "source_location": "L31",
+      "_origin": "ast",
+      "id": "scripts_07_train_qsar_model_featurize",
+      "community": 6,
+      "norm_label": "featurize()"
+    },
+    {
+      "label": "main()",
+      "file_type": "code",
+      "source_file": "scripts/07_train_qsar_model.py",
+      "source_location": "L46",
+      "_origin": "ast",
+      "id": "scripts_07_train_qsar_model_main",
+      "community": 6,
+      "norm_label": "main()"
+    },
+    {
+      "label": "Build an MDM2-binding QSAR model from ChEMBL bioactivity data and use it to add",
+      "file_type": "rationale",
+      "source_file": "scripts/07_train_qsar_model.py",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "scripts_07_train_qsar_model_rationale_1",
+      "community": 6,
+      "norm_label": "build an mdm2-binding qsar model from chembl bioactivity data and use it to add"
+    },
+    {
+      "label": "08_check_supplier_availability.py",
+      "file_type": "code",
+      "source_file": "scripts/08_check_supplier_availability.py",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "scripts_08_check_supplier_availability",
+      "community": 1,
+      "norm_label": "08_check_supplier_availability.py"
+    },
+    {
+      "label": "get_cid()",
+      "file_type": "code",
+      "source_file": "scripts/08_check_supplier_availability.py",
+      "source_location": "L34",
+      "_origin": "ast",
+      "id": "scripts_08_check_supplier_availability_get_cid",
+      "community": 1,
+      "norm_label": "get_cid()"
+    },
+    {
+      "label": "get_vendor_sources()",
+      "file_type": "code",
+      "source_file": "scripts/08_check_supplier_availability.py",
+      "source_location": "L48",
+      "_origin": "ast",
+      "id": "scripts_08_check_supplier_availability_get_vendor_sources",
+      "community": 1,
+      "norm_label": "get_vendor_sources()"
+    },
+    {
+      "label": "main()",
+      "file_type": "code",
+      "source_file": "scripts/08_check_supplier_availability.py",
+      "source_location": "L62",
+      "_origin": "ast",
+      "id": "scripts_08_check_supplier_availability_main",
+      "community": 1,
+      "norm_label": "main()"
+    },
+    {
+      "label": "Check commercial supplier availability for the top-ranked candidates via the Pub",
+      "file_type": "rationale",
+      "source_file": "scripts/08_check_supplier_availability.py",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "scripts_08_check_supplier_availability_rationale_1",
+      "community": 1,
+      "norm_label": "check commercial supplier availability for the top-ranked candidates via the pub"
+    },
+    {
+      "label": "Returns (cid, status): status is 'found', 'not_in_pubchem' (CID=0     sentinel),",
+      "file_type": "rationale",
+      "source_file": "scripts/08_check_supplier_availability.py",
+      "source_location": "L35",
+      "_origin": "ast",
+      "id": "scripts_08_check_supplier_availability_rationale_35",
+      "community": 1,
+      "norm_label": "returns (cid, status): status is 'found', 'not_in_pubchem' (cid=0     sentinel),"
+    },
+    {
+      "label": "Virtual Screening: Allosteric PPI Modulators",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "line 1",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "readme_virtual_screening_allosteric_ppi_modulators",
+      "community": 0,
+      "norm_label": "virtual screening: allosteric ppi modulators"
+    },
+    {
+      "label": "Target Protein (UniProt ID placeholder)",
+      "file_type": "concept",
+      "source_file": "README.md",
+      "source_location": "line 2",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "readme_target_uniprot_id",
+      "community": 0,
+      "norm_label": "target protein (uniprot id placeholder)"
+    },
+    {
+      "label": "AlphaFold",
+      "file_type": "concept",
+      "source_file": "README.md",
+      "source_location": "line 3",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "readme_alphafold",
+      "community": 0,
+      "norm_label": "alphafold"
+    },
+    {
+      "label": "ZINC (compound database)",
+      "file_type": "concept",
+      "source_file": "README.md",
+      "source_location": "line 3",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "readme_zinc",
+      "community": 0,
+      "norm_label": "zinc (compound database)"
+    },
+    {
+      "label": "DiffDock",
+      "file_type": "concept",
+      "source_file": "README.md",
+      "source_location": "line 3",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "readme_diffdock",
+      "community": 0,
+      "norm_label": "diffdock"
+    },
+    {
+      "label": "Scientific Agent Skills (k-dense-ai/scientific-agent-skills)",
+      "file_type": "concept",
+      "source_file": "README.md",
+      "source_location": "line 3",
+      "source_url": "https://github.com/k-dense-ai/scientific-agent-skills",
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "readme_scientific_agent_skills",
+      "community": 0,
+      "norm_label": "scientific agent skills (k-dense-ai/scientific-agent-skills)"
+    },
+    {
+      "label": "Allosteric Modulator Discovery (project goal/rationale)",
+      "file_type": "rationale",
+      "source_file": "README.md",
+      "source_location": "line 3",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "readme_allosteric_modulator_discovery",
+      "community": 0,
+      "norm_label": "allosteric modulator discovery (project goal/rationale)"
+    }
+  ],
+  "links": [
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/01_identify_interface.py",
+      "source_location": "L23",
+      "weight": 1.0,
+      "source": "scripts_01_identify_interface",
+      "target": "scripts_01_identify_interface_get_heavy_atoms",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/01_identify_interface.py",
+      "source_location": "L34",
+      "weight": 1.0,
+      "source": "scripts_01_identify_interface",
+      "target": "scripts_01_identify_interface_main",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/01_identify_interface.py",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "scripts_01_identify_interface_rationale_1",
+      "target": "scripts_01_identify_interface",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/01_identify_interface.py",
+      "source_location": "L41",
+      "weight": 1.0,
+      "source": "scripts_01_identify_interface_main",
+      "target": "scripts_01_identify_interface_get_heavy_atoms",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/02_filter_candidates.py",
+      "source_location": "L34",
+      "weight": 1.0,
+      "source": "scripts_02_filter_candidates",
+      "target": "scripts_02_filter_candidates_descriptors_ok",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/02_filter_candidates.py",
+      "source_location": "L45",
+      "weight": 1.0,
+      "source": "scripts_02_filter_candidates",
+      "target": "scripts_02_filter_candidates_main",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/02_filter_candidates.py",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "scripts_02_filter_candidates_rationale_1",
+      "target": "scripts_02_filter_candidates",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/02_filter_candidates.py",
+      "source_location": "L61",
+      "weight": 1.0,
+      "source": "scripts_02_filter_candidates_main",
+      "target": "scripts_02_filter_candidates_descriptors_ok",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/03_build_docking_set.py",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "scripts_03_build_docking_set_rationale_1",
+      "target": "scripts_03_build_docking_set",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/04_prepare_receptor.py",
+      "source_location": "L30",
+      "weight": 1.0,
+      "source": "scripts_04_prepare_receptor",
+      "target": "scripts_04_prepare_receptor_main",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/04_prepare_receptor.py",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "scripts_04_prepare_receptor_rationale_1",
+      "target": "scripts_04_prepare_receptor",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/05_prepare_ligands.py",
+      "source_location": "L23",
+      "weight": 1.0,
+      "source": "scripts_05_prepare_ligands",
+      "target": "scripts_05_prepare_ligands_embed_one",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/05_prepare_ligands.py",
+      "source_location": "L35",
+      "weight": 1.0,
+      "source": "scripts_05_prepare_ligands",
+      "target": "scripts_05_prepare_ligands_main",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/05_prepare_ligands.py",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "scripts_05_prepare_ligands_rationale_1",
+      "target": "scripts_05_prepare_ligands",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "indirect_call",
+      "context": "argument",
+      "confidence": "INFERRED",
+      "source_file": "scripts/05_prepare_ligands.py",
+      "source_location": "L40",
+      "weight": 1.0,
+      "source": "scripts_05_prepare_ligands_main",
+      "target": "scripts_05_prepare_ligands_embed_one",
+      "confidence_score": 0.5
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/06_rank_docking_results.py",
+      "source_location": "L18",
+      "weight": 1.0,
+      "source": "scripts_06_rank_docking_results",
+      "target": "scripts_06_rank_docking_results_best_affinity",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/06_rank_docking_results.py",
+      "source_location": "L27",
+      "weight": 1.0,
+      "source": "scripts_06_rank_docking_results",
+      "target": "scripts_06_rank_docking_results_main",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/06_rank_docking_results.py",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "scripts_06_rank_docking_results_rationale_1",
+      "target": "scripts_06_rank_docking_results",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/06_rank_docking_results.py",
+      "source_location": "L31",
+      "weight": 1.0,
+      "source": "scripts_06_rank_docking_results_main",
+      "target": "scripts_06_rank_docking_results_best_affinity",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/07_train_qsar_model.py",
+      "source_location": "L31",
+      "weight": 1.0,
+      "source": "scripts_07_train_qsar_model",
+      "target": "scripts_07_train_qsar_model_featurize",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/07_train_qsar_model.py",
+      "source_location": "L46",
+      "weight": 1.0,
+      "source": "scripts_07_train_qsar_model",
+      "target": "scripts_07_train_qsar_model_main",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/07_train_qsar_model.py",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "scripts_07_train_qsar_model_rationale_1",
+      "target": "scripts_07_train_qsar_model",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/07_train_qsar_model.py",
+      "source_location": "L62",
+      "weight": 1.0,
+      "source": "scripts_07_train_qsar_model_main",
+      "target": "scripts_07_train_qsar_model_featurize",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/08_check_supplier_availability.py",
+      "source_location": "L34",
+      "weight": 1.0,
+      "source": "scripts_08_check_supplier_availability",
+      "target": "scripts_08_check_supplier_availability_get_cid",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/08_check_supplier_availability.py",
+      "source_location": "L48",
+      "weight": 1.0,
+      "source": "scripts_08_check_supplier_availability",
+      "target": "scripts_08_check_supplier_availability_get_vendor_sources",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/08_check_supplier_availability.py",
+      "source_location": "L62",
+      "weight": 1.0,
+      "source": "scripts_08_check_supplier_availability",
+      "target": "scripts_08_check_supplier_availability_main",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/08_check_supplier_availability.py",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "scripts_08_check_supplier_availability_rationale_1",
+      "target": "scripts_08_check_supplier_availability",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/08_check_supplier_availability.py",
+      "source_location": "L72",
+      "weight": 1.0,
+      "source": "scripts_08_check_supplier_availability_main",
+      "target": "scripts_08_check_supplier_availability_get_cid",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/08_check_supplier_availability.py",
+      "source_location": "L35",
+      "weight": 1.0,
+      "source": "scripts_08_check_supplier_availability_rationale_35",
+      "target": "scripts_08_check_supplier_availability_get_cid",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/08_check_supplier_availability.py",
+      "source_location": "L75",
+      "weight": 1.0,
+      "source": "scripts_08_check_supplier_availability_main",
+      "target": "scripts_08_check_supplier_availability_get_vendor_sources",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "README.md",
+      "source_location": "line 3",
+      "weight": 1.0,
+      "source": "readme_virtual_screening_allosteric_ppi_modulators",
+      "target": "readme_allosteric_modulator_discovery"
+    },
+    {
+      "relation": "references",
+      "confidence": "AMBIGUOUS",
+      "confidence_score": 0.2,
+      "source_file": "README.md",
+      "source_location": "line 2",
+      "weight": 1.0,
+      "source": "readme_virtual_screening_allosteric_ppi_modulators",
+      "target": "readme_target_uniprot_id"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "README.md",
+      "source_location": "line 3",
+      "weight": 1.0,
+      "source": "readme_allosteric_modulator_discovery",
+      "target": "readme_alphafold"
+    },
+    {
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "README.md",
+      "source_location": "line 3",
+      "weight": 1.0,
+      "source": "readme_alphafold",
+      "target": "readme_diffdock"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "README.md",
+      "source_location": "line 3",
+      "weight": 1.0,
+      "source": "readme_allosteric_modulator_discovery",
+      "target": "readme_zinc"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "README.md",
+      "source_location": "line 3",
+      "weight": 1.0,
+      "source": "readme_allosteric_modulator_discovery",
+      "target": "readme_diffdock"
+    },
+    {
+      "relation": "cites",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "README.md",
+      "source_location": "line 3",
+      "weight": 1.0,
+      "source": "readme_allosteric_modulator_discovery",
+      "target": "readme_scientific_agent_skills"
+    }
+  ],
+  "hyperedges": [
+    {
+      "id": "readme_pipeline_hyperedge",
+      "label": "AlphaFold + ZINC + DiffDock virtual screening pipeline",
+      "nodes": [
+        "readme_alphafold",
+        "readme_zinc",
+        "readme_diffdock",
+        "readme_scientific_agent_skills"
+      ],
+      "relation": "participate_in",
+      "confidence": "EXTRACTED",
+      "confidence_score": 0.9,
+      "source_file": "README.md"
+    }
+  ],
+  "built_at_commit": "be1ce30f0c05779f825835bd0a16b9141d3a2cb8"
+}
